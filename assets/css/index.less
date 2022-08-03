@@ -1,0 +1,266 @@
+/* banner 图 */
+.banner{
+    margin-bottom:15px;
+
+    img{
+        width:100%;
+        height:100%;
+    }
+}
+
+/* 风险评估 */
+.risk{
+    width:100%;
+    border-top:1px solid #6c6c66;
+
+    .title{
+        width:30%;
+        text-align: center;
+        font-size:1.4em;
+        color:#1c91dd;
+        background:#fff;
+        margin:0 auto;
+        margin-top:-15px;
+        margin-bottom:5px;
+    }
+
+    .iconlist{
+        display: flex;
+        justify-content: space-around;
+        margin-bottom:15px;
+
+        .item{
+            width:20%;
+
+            .icon{
+                margin-bottom:10px;
+            }
+
+            .name{
+                text-align: center;
+            }
+        }
+    }
+
+    .box{
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+        &>div{
+            width:33.3%;
+        }
+
+        .info{
+            padding-left:10px;
+            padding-top:10px;
+            background:#f5f5f5;
+
+            .subject{
+                font-size:1.5em;
+            }
+
+            ul{
+                li{
+                    a{
+                        color:#8c8c8c;
+                        font-size:1em;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// 应用
+.apply{
+    width: 100%;
+    .title{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+        p{
+            width: 52%;
+            font-size: 1.1em;
+            margin: 0;
+            color: #1c91dd;
+        }
+        span{
+            width: 20%;
+            height: 1px;
+            border-bottom: 1px solid #999;
+        }
+    }
+    .appimg{
+        width: 100%;
+        position: relative;
+        color: #fff;
+        &:hover  .shabow{
+            left: 0%;
+        }
+        .shabow{
+            width: 35%;
+            height: 100%;
+            background-color: rgba(0, 0, 0,.8);
+            position: absolute;
+            top: 0;
+            left: -50%;
+            transition: all .5s;
+            .sidetitle{
+                width: 80%;
+                margin:  0 auto;
+                font-size: 16px;
+                font-family: OSBold;
+                padding: 1em 0;
+            }
+            .text{
+                width: 70%;
+                margin: 0 auto;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                
+                span{
+                    width: 45%;
+                    text-align: center;
+                    padding: .2em .5em;
+                    font-size: 10px;
+                    border: 1px solid #fff;
+                    &:nth-child(3){
+                        margin-top: 10px;
+                    }
+                }
+            }
+            
+        }
+    }
+    .buttom{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        color: #fff;
+        margin-top: 1em;
+        .img{
+            width: 20%;
+            height: 70%;
+            margin-right: 1em;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .one,.two{
+            width: 48%;
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            margin-bottom: .5em;
+            padding: .2em 0;
+            span{
+                width: 60%;
+            }
+        }
+        .one{
+            background-color: #55acee;
+        }
+        .two{
+            background-color: #3b5998;
+        }
+        .three{
+            width: 100%;
+            background-color: #363a42;
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            padding: .8em 0;
+            margin-bottom: 2em;
+        }
+    }
+}
+// 联系我们
+.contact{
+    width: 100%;
+    padding-bottom: 6em;
+    .title{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+        p{
+            width: 30%;
+            font-size: 1.1em;
+            margin: 0;
+            color: #1c91dd;
+        }
+        span{
+            width: 35%;
+            height: 1px;
+            border-bottom: 1px solid #999;
+        }
+    }
+    .list{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: flex-end;
+        width: 90%;
+        height: 10em;
+        margin-left: 1.5em;
+        div{
+            width: 100%;
+            span{
+                padding: .5em .3em; 
+                border: 1px solid #ddd;
+                margin-right: 10px;
+            }
+            .right{
+                margin-left: 20px;
+            }
+        }
+        .ov{
+            white-space: nowrap;
+        } 
+    }
+    // 地图
+    .map{
+        width: 100%;
+        height: 15em;
+        margin-top: 1.5em;
+        padding-bottom: 6em;
+    }
+}
+
+
+// 导航栏
+.navs{
+        width: 100%;
+        margin-top: 3.5em;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        background-color: #fff;
+        z-index: 1;
+        a{
+            span:nth-child(1){
+                font-size: 2em;
+            }
+            color: #999;
+            width: 25%;
+            height: 5em;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            padding: .5em 0;
+            transition: all ease-in-out .3s;
+            &:hover{
+                background-color: #1c91dd;
+                color: #fff;
+            }
+        }
+}
